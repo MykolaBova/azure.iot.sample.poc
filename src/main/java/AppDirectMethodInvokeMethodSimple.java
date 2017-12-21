@@ -4,14 +4,12 @@ import com.microsoft.azure.sdk.iot.service.exceptions.IotHubException;
 
 import java.io.IOException;
 
+import managers.Constants;
+
 import static managers.Constants.*;
 
 public class AppDirectMethodInvokeMethodSimple {
-    /**
-     *  Article
-     *  Use direct methods (Java)
-     *  https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-java-java-direct-methods
-     */
+
     public static void main( String[] args ) throws IOException {
         System.out.println("Starting sample...");
         DeviceMethod methodClient = DeviceMethod.createFromConnectionString(iotHubConnectionString);

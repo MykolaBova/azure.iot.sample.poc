@@ -6,7 +6,9 @@ import java.util.concurrent.TimeUnit;
 
 public class Constants {
     // pk from shared access policy named iothubowner
-    public static final String iotHubConnectionString = "HostName=<host>;SharedAccessKeyName=<hub>;SharedAccessKey=<key>";
+//    public static final String iotHubConnectionString = "HostName=<host>;SharedAccessKeyName=<hub>;SharedAccessKey=<key>";
+    public static final String iotHubConnectionString = "HostName=boxmessagehub.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=9lpC/dPWNrQiEh/XLBVxdR9IW1oEZt1bo54RGDVP0LE=";
+
     public static final String deviceId = "myDeviceId";
     public static final String methodName = "writeLine";
 
@@ -15,7 +17,11 @@ public class Constants {
     public static final String payload = "a line to be written";
 
     // Device conncetion string
-    public static String connString = "HostName=<host>;DeviceId=<device>;SharedAccessKey=<key>";
+//    public static String connString = "HostName=<host>;DeviceId=<device>;SharedAccessKey=<key>";
+    public static String connString = "HostName=boxmessagehub.azure-devices.net;DeviceId=7C9763000747;SharedAccessKey=LoyY0XFqolo2o5L5iqt4ZEywlWh5C1NmNxGbP8/zmNA=";
+    //public static String connString = "HostName=boxmessagehub.azure-devices.net;DeviceId=myDeviceId;SharedAccessKey=RA+gG0snZ2gVEe2haL6GVovsxmpePZ67zvwZpI90eEY=";
+    //public static String connString = "HostName=boxmessagehub.azure-devices.net;DeviceId=myDeviceI3;SharedAccessKey=MMEj4DfmWgb2HSs6reSeChs7rmu5ET2DIwwNbO2+lU0=";
+
 
     // IoT Hub responded to device method operation with status ERROR
     // private static IotHubClientProtocol protocol = IotHubClientProtocol.HTTPS;
